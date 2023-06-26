@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: netsparker-cloud@1
+  inputs:
+    apiConnection: 'TEST CONNECTION'
+    scanTypes: '1'
+    scanWebSites: 'fd1089ce-c233-4b6d-6a9a-ac9303d62d2e'
+    buildFail: true
+    severity: 'Critical'
+    hasReport: true
+    stopScan: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
